@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Job Listings</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      /* Small text at the bottom of the page */
+      .bottom-text {
+        font-size: 11px;
+        text-align: center;
+      }
+      .bottom-text a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top banner section -->
+    <header class="top"></header>
+
+    <!-- Main content area -->
+    <div class="content">
+      <!-- Filter bar that appears when you click tags -->
+      <div id="top-bar" class="bar bar-hidden">
+        <!-- Where selected tags appear -->
+        <div class="bar-tags" id="bar-tags"></div>
+        <!-- Button to clear all filters -->
+        <button id="clear" class="bar-clear">Clear</button>
+      </div>
+
+      <!-- List of all job postings -->
+      <div class="list" id="list">
+        <!-- Single job posting -->
+        <div class="item">
+          <div class="item-left">
+            <img
+              src="./images/photosnap.svg"
+              alt="Photosnap"
+              class="item-pic"
+            />
+            <div class="item-details">
+              <span class="item-name">Photosnap</span>
+              <span class="item-role">Senior Frontend Developer</span>
+              <ul class="item-info">
+                <li class="info">1d ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">USA Only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Senior</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/manage.svg" alt="Manage" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">Manage</span>
+              <span class="item-role">Fullstack Developer</span>
+              <ul class="item-info">
+                <li class="info">1d ago</li>
+                <li class="info">Part Time</li>
+                <li class="info">Remote</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Fullstack</span>
+            <span class="tag">Midweight</span>
+            <span class="tag">Python</span>
+            <span class="tag">React</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/account.svg" alt="Account" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">Account</span>
+              <span class="item-role">Junior Frontend Developer</span>
+              <ul class="item-info">
+                <li class="info">2d ago</li>
+                <li class="info">Part Time</li>
+                <li class="info">USA Only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Sass</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/myhome.svg" alt="MyHome" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">MyHome</span>
+              <span class="item-role">Junior Frontend Developer</span>
+              <ul class="item-info">
+                <li class="info">5d ago</li>
+                <li class="info">Contract</li>
+                <li class="info">USA Only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img
+              src="./images/loop-studios.svg"
+              alt="Loop Studios"
+              class="item-pic"
+            />
+            <div class="item-details">
+              <span class="item-name">Loop Studios</span>
+              <span class="item-role">Software Engineer</span>
+              <ul class="item-info">
+                <li class="info">1w ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">Worldwide</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Fullstack</span>
+            <span class="tag">Midweight</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Ruby</span>
+            <span class="tag">Sass</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/faceit.svg" alt="FaceIt" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">FaceIt</span>
+              <span class="item-role">Junior Backend Developer</span>
+              <ul class="item-info">
+                <li class="info">2w ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">UK Only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Backend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">RoR</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/shortly.svg" alt="Shortly" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">Shortly</span>
+              <span class="item-role">Junior Developer</span>
+              <ul class="item-info">
+                <li class="info">2w ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">Worldwide</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Sass</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img src="./images/insure.svg" alt="Insure" class="item-pic" />
+            <div class="item-details">
+              <span class="item-name">Insure</span>
+              <span class="item-role">Junior Frontend Developer</span>
+              <ul class="item-info">
+                <li class="info">2w ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">USA Only</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Vue</span>
+            <span class="tag">Sass</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img
+              src="./images/eyecam-co.svg"
+              alt="Eyecam Co."
+              class="item-pic"
+            />
+            <div class="item-details">
+              <span class="item-name">Eyecam Co.</span>
+              <span class="item-role">Full Stack Engineer</span>
+              <ul class="item-info">
+                <li class="info">3w ago</li>
+                <li class="info">Full Time</li>
+                <li class="info">Worldwide</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Fullstack</span>
+            <span class="tag">Midweight</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="item-left">
+            <img
+              src="./images/the-air-filter-company.svg"
+              alt="The Air Filter Company"
+              class="item-pic"
+            />
+            <div class="item-details">
+              <span class="item-name">The Air Filter Company</span>
+              <span class="item-role">Front-end Dev</span>
+              <ul class="item-info">
+                <li class="info">1mo ago</li>
+                <li class="info">Part Time</li>
+                <li class="info">Worldwide</li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-right">
+            <span class="tag">Frontend</span>
+            <span class="tag">Junior</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Sass</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Credit text at the bottom -->
+    <div class="bottom-text">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ohwo Oghenekaro Abraham</a>.
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
